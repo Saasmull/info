@@ -7,7 +7,7 @@
 }	
     
   function toggleFullScreen() {
-    var element = document.getElementById("rgb");
+    var element = document.getElementById("full");
     if (!document.fullscreen && !document.mozFullScreen && !document.webkitFullScreen && !document.msRequestFullscreen) {
       if(element.requestFullScreen) {
         element.requestFullScreen();
@@ -54,6 +54,8 @@
    </style>
  </head>
  <body>
+   <figure id="full">
    <div id="rgb"></div>
+   </figure>
  </body>
 </html>
