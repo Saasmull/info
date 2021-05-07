@@ -1,15 +1,5 @@
-<html>
-<head>
-<title>RGB</title>
-    <script>
-(function () {
-	function init() {
-		document.addEventListener("click", toggleFullScreen, false);
-	}
-
-	function toggleFullScreen() {
-		var element = document.getElementById("rgb");
-		if (!document.Fullscreen && !document.mozFullScreen && !document.webkitFullScreen &&
+<html><head><title>RGB | Saasmull</title><script>(function () {function init() {document.addEventListener("click", toggleFullScreen, false);}function toggleFullScreen() {var element = document.getElementById("rgb");
+if (!document.Fullscreen && !document.mozFullScreen && !document.webkitFullScreen &&
 			!document.msRequestFullscreen) {
 			if (element.requestFullScreen) {
 				element.requestFullScreen();
@@ -35,22 +25,7 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		init();
 	});
-}());
-    </script>
-    <style>
-      body html{
-        padding: 0;
-        margin: 0;
-      }
-
-      #rgb{
-        background-color: red;
-        width: 100%;
-        height: 100%;
-        animation-name: ani;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-     }
+}());</script><style>body html{padding: 0;margin: 0;}#rgb{background-color: red;width: 100%;height: 100%;animation-name: ani;animation-duration: 20s;animation-iteration-count: infinite;}
 
      @keyframes ani{
        0%{background-color:red;}
