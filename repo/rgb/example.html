@@ -1,14 +1,7 @@
 <html><head><title>RGB | Saasmull</title><script>(function () {function init() {document.addEventListener("click", toggleFullScreen, false);}function toggleFullScreen() {var element = document.getElementById("rgb");
 if (!document.Fullscreen && !document.mozFullScreen && !document.webkitFullScreen &&
-			!document.msRequestFullscreen) {
-			if (element.requestFullScreen) {
-				element.requestFullScreen();
-			} else if (element.webkitRequestFullScreen) {
-				element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-			} else if (element.mozRequestFullScreen) {
-				element.mozRequestFullScreen();
-			} else if (element.msRequestFullscreen) {
-				element.msRequestFullscreen();
+			!document.msRequestFullscreen) {if (element.requestFullScreen) {element.requestFullScreen();} else if (element.webkitRequestFullScreen) {element.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);} else if (element.mozRequestFullScreen) {element.mozRequestFullScreen();
+} else if (element.msRequestFullscreen) {element.msRequestFullscreen();
 			}
 		} else {
 			if (document.exitFullscreen) {
